@@ -211,7 +211,7 @@ async function submitNewsletter(event) {
 
     try {
         // REPLACE WITH YOUR GOOGLE APPS SCRIPT URL
-        const GOOGLE_APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyRnYAHIzvEQP5wfr1qznAMlSfKldHCjVwYroEyh9R9kyzvbhg1c2SKpZuE8B16rjwu/exec';
+        const GOOGLE_APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyjqjt9fmh6UvHKwfqGLkkMWVvCxnrmkdKE8MCzc6qI0IN_p-IxuDgW56E4h5Qq81fc/exec';
 
         // Get user's IP (optional - for rate limiting)
         let ipAddress = 'unknown';
