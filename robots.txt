@@ -1,0 +1,35 @@
+# robots.txt para ChegaDeJuros
+
+User-agent: *
+Allow: /
+
+# Bloquear arquivos sensíveis
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /api/
+
+# Permitir rastreamento de recursos importantes
+Allow: /styles.css
+Allow: /scripts.js
+Allow: /images/
+
+# Sitemap
+Sitemap: https://chegadejuros.com.br/sitemap.xml
+
+# Crawl-delay para bots mais agressivos
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+# Bloquear bots ruins conhecidos
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot  
+Disallow: /

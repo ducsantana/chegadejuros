@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog ChegaDeJuros | Artigos sobre Consórcio sem Juros</title>
+    <meta name="description"
+        content="Artigos completos sobre consórcios, dicas para economizar e guias práticos. Aprenda tudo sobre consórcio de imóveis, carros e mais.">
+    <meta name="keywords" content="blog consórcio, artigos consórcio, dicas consórcio, guia consórcio">
+    <link rel="canonical" href="https://chegadejuros.com.br/blog.html">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <!-- Header will be loaded here dynamically -->
+    <div id="header-container"></div>
+
+    <!-- WhatsApp float will be loaded here dynamically -->
+    <div id="whatsapp-container"></div>
+
+    <main role="main">
+        <div class="blog-container">
+            <div class="blog-header">
+                <h1>📚 Blog ChegaDeJuros</h1>
+                <p>Artigos completos sobre consórcios, economia e planejamento financeiro</p>
+                <p style="font-size: 0.875rem; color: #666; margin-top: 0.5rem;">
+                    📅 Novos artigos são liberados no primeiro dia de cada mês
+                </p>
+            </div>
+
+            <div class="blog-grid" id="blogGrid">
+                <!-- Artigos serão inseridos aqui via JavaScript -->
+            </div>
+        </div>
+    </main>
+
+    <footer role="contentinfo">
+        <p><strong>ChegaDeJuros</strong> - Entenda Consórcio e Pare de Pagar Juros</p>
+        <p>Este é um site informativo e educacional. Não somos uma administradora de consórcios.</p>
+        <p>© 2025 ChegaDeJuros - Todos os direitos reservados</p>
+    </footer>
+
+    <script>
+
+        const blogPosts = [
+            {
+                id: 1,
+                title: "Consórcio de Imóveis: Guia Completo 2025",
+                excerpt: "Tudo que você precisa saber sobre consórcio de imóveis: como funciona, vantagens, desvantagens e como escolher o melhor plano para você.",
+                category: "Imóveis",
+                publishDate: new Date("2025-08-01"),
+                readTime: "15 min",
+                icon: "🏠",
+                slug: "consorcio-imoveis-guia-completo"
+            },
+            {
+                id: 2,
+                title: "Consórcio vs Financiamento: Qual Escolher em 2025?",
+                excerpt: "Análise detalhada comparando consórcio e financiamento. Descubra qual opção oferece melhor custo-benefício para seu perfil.",
+                category: "Comparativo",
+                publishDate: new Date("2025-09-01"),
+                readTime: "12 min",
+                icon: "⚖️",
+                slug: "consorcio-vs-financiamento"
+            },
+            {
+                id: 3,
+                title: "Como Funciona o Lance no Consórcio: Guia Prático",
+                excerpt: "Entenda os tipos de lance (fixo, embutido e livre), estratégias para aumentar suas chances e quando vale a pena dar lance.",
+                category: "Estratégia",
+                publishDate: new Date("2025-10-01"),
+                readTime: "10 min",
+                icon: "🎯",
+                slug: "como-funciona-lance-consorcio"
+            },
+            {
+                id: 4,
+                title: "Consórcio Vale a Pena? Análise Completa",
+                excerpt: "Descubra quando o consórcio é a melhor opção e quando não vale a pena. Análise honesta com prós, contras e perfis ideais.",
+                category: "Análise",
+                publishDate: new Date("2025-11-01"),
+                readTime: "14 min",
+                icon: "💡",
+                slug: "consorcio-vale-a-pena"
+            },
+            {
+                id: 5,
+                title: "Melhores Administradoras de Consórcio 2025",
+                excerpt: "Ranking das principais administradoras de consórcio no Brasil: taxas, reputação, contemplação e atendimento.",
+                category: "Recomendações",
+                publishDate: new Date("2025-12-01"),
+                readTime: "18 min",
+                icon: "⭐",
+                slug: "melhores-administradoras-consorcio"
+            },
+            {
+                id: 6,
+                title: "Consórcio de Carros: Tudo Que Você Precisa Saber",
+                excerpt: "Guia completo sobre consórcio de automóveis: valores, prazos, contemplação e como escolher o melhor plano.",
+                category: "Automóveis",
+                publishDate: new Date("2026-01-01"),
+                readTime: "13 min",
+                icon: "🚗",
+                slug: "consorcio-carros-guia-completo"
+            },
+            {
+                id: 7,
+                title: "Como Ser Contemplado Mais Rápido no Consórcio",
+                excerpt: "Estratégias comprovadas para aumentar suas chances de contemplação: lances, timing e dicas práticas.",
+                category: "Estratégia",
+                publishDate: new Date("2026-02-01"),
+                readTime: "11 min",
+                icon: "⚡",
+                slug: "ser-contemplado-rapido-consorcio"
+            },
+            {
+                id: 8,
+                title: "Consórcio Contemplado: Vale a Pena Comprar?",
+                excerpt: "Tudo sobre compra de cotas contempladas: vantagens, cuidados, como avaliar se o negócio é bom e armadilhas a evitar.",
+                category: "Dicas",
+                publishDate: new Date("2026-03-01"),
+                readTime: "12 min",
+                icon: "🔑",
+                slug: "consorcio-contemplado-vale-pena"
+            },
+            {
+                id: 9,
+                title: "Consórcio para Construir Casa: Como Funciona",
+                excerpt: "Use consórcio de imóveis para construir sua casa própria: documentação necessária, liberação da carta e passo a passo.",
+                category: "Imóveis",
+                publishDate: new Date("2026-04-01"),
+                readTime: "16 min",
+                icon: "🏗️",
+                slug: "consorcio-construir-casa"
+            },
+            {
+                id: 10,
+                title: "Taxa de Administração do Consórcio: O Que É?",
+                excerpt: "Entenda como funciona a taxa de administração, quanto é justo pagar e como ela impacta o valor total do seu consórcio.",
+                category: "Educação",
+                publishDate: new Date("2026-05-01"),
+                readTime: "9 min",
+                icon: "💰",
+                slug: "taxa-administracao-consorcio"
+            }
+        ];
+
+        function getPostStatus(publishDate) {
+            const today = new Date();
+            today.setHours(0, 0, 0, 0);
+
+            const postDate = new Date(publishDate);
+            postDate.setHours(0, 0, 0, 0);
+
+            const currentMonth = today.getMonth();
+            const currentYear = today.getFullYear();
+            const postMonth = postDate.getMonth();
+            const postYear = postDate.getFullYear();
+
+            // Check if post is in the past
+            if (postDate < today) {
+                return 'published';
+            }
+            // Check if post is in current month and year
+            else if (postMonth === currentMonth && postYear === currentYear) {
+                return 'upcoming';
+            }
+            // Otherwise it's in the future
+            else {
+                return 'hidden';
+            }
+        }
+
+        function formatDate(date) {
+            return date.toLocaleDateString('pt-BR', {
+                year: 'numeric',
+                month: 'long',
+                day: 'numeric'
+            });
+        }
+
+        function renderBlogPosts() {
+            const blogGrid = document.getElementById('blogGrid');
+            blogGrid.innerHTML = '';
+
+            blogPosts.forEach(post => {
+                const status = getPostStatus(post.publishDate);
+
+                // Skip hidden posts
+                if (status === 'hidden') {
+                    return;
+                }
+
+                const card = document.createElement('div');
+                card.className = `blog-card ${status === 'upcoming' ? 'locked' : ''}`;
+
+                card.innerHTML = `
+                    <div class="blog-card-image">
+                        <span style="filter: ${status === 'upcoming' ? 'blur(4px)' : 'none'};">${post.icon}</span>
+                    </div>
+                    <div class="blog-card-content">
+                        <div class="blog-card-meta">
+                            <span class="blog-card-category">${post.category}</span>
+                            <span class="blog-card-date">📅 ${formatDate(post.publishDate)}</span>
+                        </div>
+                        <h2>${post.title}</h2>
+                        <p>${post.excerpt}</p>
+                        ${status === 'upcoming' ? `
+                            <div class="unlock-date">
+                                🔒 Artigo disponível em ${formatDate(post.publishDate)}
+                            </div>
+                        ` : `
+                            <div class="blog-card-footer">
+                                <span class="read-time">⏱️ ${post.readTime} de leitura</span>
+                                <a href="artigos/${post.slug}.html" class="read-more">
+                                    Ler artigo →
+                                </a>
+                            </div>
+                        `}
+                    </div>
+                `;
+
+                blogGrid.appendChild(card);
+            });
+        }
+
+        // Renderizar posts ao carregar a página
+        renderBlogPosts();
+
+        // Atualizar a cada hora para liberar novos posts automaticamente
+        setInterval(renderBlogPosts, 3600000);
+    </script>
+
+    <!-- Load JavaScript files -->
+    <script src="js/header.js"></script>
+
+    <!-- Load header component dynamically -->
+    <script>
+        // Load header component
+        fetch('components/header.html')
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.text();
+            })
+            .then(data => {
+                document.getElementById('header-container').innerHTML = data;
+                // Re-initialize any header-related JavaScript after loading
+                if (typeof initializeHeader === 'function') {
+                    initializeHeader();
+                }
+            })
+            .catch(error => {
+                console.error('Error loading header:', error);
+                // Fallback: inject header HTML directly if fetch fails
+                document.getElementById('header-container').innerHTML = `
+                    <header role="banner">
+                        <nav role="navigation" aria-label="Menu principal">
+                            <a href="/" class="logo" aria-label="ChegaDeJuros - Página inicial">
+                                <img src="images/logo.png" alt="ChegaDeJuros Logo" class="logo-img">
+                            </a>
+                            <ul class="nav-links">
+                                <li><a href="/#como-funciona">Como Funciona</a></li>
+                                <li><a href="/#tipos">Tipos</a></li>
+                                <li><a href="/#comparativo">Comparativo</a></li>
+                                <li><a href="/#calculadora">Calculadora</a></li>
+                                <li><a href="/blog.html">Blog</a></li>
+                                <li><a href="/#faq">FAQ</a></li>
+                            </ul>
+                            <button class="mobile-menu-toggle" aria-label="Menu" onclick="toggleMobileMenu()">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </nav>
+                    </header>
+                `;
+                if (typeof initializeHeader === 'function') {
+                    cla
+                    initializeHeader();
+                }
+            });
+
+        // Load WhatsApp float component
+        fetch('components/whatsapp-float.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('whatsapp-container').innerHTML = data;
+            })
+            .catch(error => {
+                console.error('Error loading WhatsApp float:', error);
+            });
+    </script>
+</body>
+
+</html>
