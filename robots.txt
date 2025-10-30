@@ -3,10 +3,15 @@
 User-agent: *
 Allow: /
 
+# Permitir favicons explicitamente
+Allow: /favicon.ico
+Allow: /favicon-*.png
+Allow: /apple-touch-icon.png
+Allow: /site.webmanifest
+
 # Bloquear arquivos sensíveis
 Disallow: /admin/
 Disallow: /private/
-Disallow: /*.json$
 Disallow: /api/
 
 # Permitir rastreamento de recursos importantes
