@@ -9,80 +9,80 @@
     <!-- Página Principal -->
     <url>
         <loc>https://chegadejuros.com.br/</loc>
-        <lastmod>2025-01-09</lastmod>
+        <lastmod>2025-11-03</lastmod>
         <changefreq>weekly</changefreq>
         <priority>1.0</priority>
     </url>
     
-    <!-- Como Funciona -->
+    <!-- Blog -->
     <url>
-        <loc>https://chegadejuros.com.br/como-funciona-consorcio</loc>
-        <lastmod>2025-01-09</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    
-    <!-- Tipos de Consórcio -->
-    <url>
-        <loc>https://chegadejuros.com.br/tipos-de-consorcio</loc>
-        <lastmod>2025-01-09</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <!-- Consórcio de Imóveis -->
-    <url>
-        <loc>https://chegadejuros.com.br/consorcio-imoveis</loc>
-        <lastmod>2025-01-09</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    
-    <!-- Consórcio de Automóveis -->
-    <url>
-        <loc>https://chegadejuros.com.br/consorcio-automoveis</loc>
-        <lastmod>2025-01-09</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.8</priority>
-    </url>
-    
-    <!-- Consórcio de Motos -->
-    <url>
-        <loc>https://chegadejuros.com.br/consorcio-motos</loc>
-        <lastmod>2025-01-09</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    
-    <!-- Comparativo -->
-    <url>
-        <loc>https://chegadejuros.com.br/consorcio-vs-financiamento</loc>
-        <lastmod>2025-01-09</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    
-    <!-- Calculadora -->
-    <url>
-        <loc>https://chegadejuros.com.br/calculadora-consorcio</loc>
-        <lastmod>2025-01-09</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.9</priority>
-    </url>
-    
-    <!-- FAQ -->
-    <url>
-        <loc>https://chegadejuros.com.br/perguntas-frequentes</loc>
-        <lastmod>2025-01-09</lastmod>
-        <changefreq>monthly</changefreq>
-        <priority>0.7</priority>
-    </url>
-    
-    <!-- Blog (se houver) -->
-    <url>
-        <loc>https://chegadejuros.com.br/blog</loc>
-        <lastmod>2025-01-09</lastmod>
+        <loc>https://chegadejuros.com.br/blog.html</loc>
+        <lastmod>2025-11-03</lastmod>
         <changefreq>weekly</changefreq>
+        <priority>0.9</priority>
+    </url>
+    
+    <!-- Artigos -->
+    <url>
+        <loc>https://chegadejuros.com.br/artigos/2025-04-consorcio-imoveis-guia-completo.html</loc>
+        <lastmod>2025-11-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://chegadejuros.com.br/artigos/2025-05-consorcio-veiculos-como-funciona.html</loc>
+        <lastmod>2025-11-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://chegadejuros.com.br/artigos/2025-06-consorcio-vs-financiamento-qual-escolher-2025.html</loc>
+        <lastmod>2025-11-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://chegadejuros.com.br/artigos/2025-07-como-ser-contemplado-mais-rapido-no-consorcio.html</loc>
+        <lastmod>2025-11-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://chegadejuros.com.br/artigos/2025-08-o-que-e-lance-no-consorcio-e-quais-os-tipos.html</loc>
+        <lastmod>2025-11-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://chegadejuros.com.br/artigos/2025-09-taxa-de-administracao-no-consorcio.html</loc>
+        <lastmod>2025-11-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://chegadejuros.com.br/artigos/2025-10-consorcio-de-motos.html</loc>
+        <lastmod>2025-11-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://chegadejuros.com.br/artigos/2025-11-consorcio-para-investimento.html</loc>
+        <lastmod>2025-11-03</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <url>
+        <loc>https://chegadejuros.com.br/artigos/2025-12-consorcio-de-servicos.html</loc>
+        <lastmod>2025-11-03</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     
